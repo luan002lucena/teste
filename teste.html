@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo!</title>
+        
+    <style>
+       body{
+        background-color: rgb(235, 105, 105);
+        text-align: center;
+    
+    }
+        .painel{
+        padding-top: 20px;
+        margin: auto;
+        width: 500px;
+        height: 570px;
+        background-color: rgb(250, 26, 26);
+        border-radius: 20px;
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    h1{
+      font-size: 500;
+      
+
+    }
+    
+    #sim{
+        
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: red;
+        color: bisque;
+        font-size: 25px;
+        margin-left: -90px;
+        
+        
+    }
+    #nao{
+        position: absolute;
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: rgb(19, 17, 17);
+        color: bisque;
+        font-size: 25px;
+        margin-left: 10px;
+        
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="painel">
+        <h1>Eiii, Quero te falar que...</h1>
+        <img src="https://i.pinimg.com/originals/99/c2/88/99c288ae53ab769c038b9a9ff5ba667a.gif">
+        <p>Desde que eu conheci você a minha vida só melhorou, Você me causa um turbilhão de sentimentos bons, serei eternamente grato</p>
+        <p>e nunca cansarei de falar o quanto eu Te Amoo, Emilly Araújo!</p>
+        <p>Você me Ama?</p>
+            
+
+
+    <a href="https://media.tenor.com/NaJMw7pMLbcAAAAC/in-love-donald-duck.gif"><button id="sim"> Sim! </button></a>
+    <button onmouseover= "fuja()" id="nao"> Não! </button>
+
+
+</div>
+<script>
+
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+        
+        var larguraJanela = window.innerWidth;
+        var alturaJanela = window.innerHeight;
+
+        var maxX = larguraJanela - botaoNao.offsetWidth;
+        var maxY = alturaJanela - botaoNao.offsetHeight;
+
+        var aleatorioX = Math.floor(Math.random() * maxX);
+        var aleatorioY = Math.floor(Math.random() * maxY);
+
+        botaoNao.style.left = aleatorioX + "px";
+        botaoNao.style.top = aleatorioY + "px";
+    }
+</script>
+
+</body>
+</html>
